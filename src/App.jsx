@@ -29,6 +29,7 @@ function App()
     fetchData();
   },[])
 
+  // this function is used for handling search input.
   const handleSearch = (query) =>
     {
       setSearchQuery(query);
