@@ -1,0 +1,46 @@
+h2
+    {
+        width: 100%;
+        margin-top: -6rem;
+        font-size: 35px;
+        color: rgb(37, 37, 219);
+        text-shadow: 1px 1px 1px black;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+.form-wrapper
+    {
+        width: 56%;
+        height: 4rem;
+        margin: 1rem auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        justify-content: center; 
+        align-items: center; 
+        flex-shrink: 10px;
+    }
+input
+    {
+        width: 83%;
+        height: 3rem;
+        padding-left: 1rem;
+        font-size: 17px;
+        color: red;
+        text-shadow: 1px 1px 1px black;
+        border-radius: 5px;
+        border: none; 
+    }
+.submit-btn
+    {
+        width: 15%;
+        background-color: green;
+        margin-left: 2px;
+        padding-left: 0px;
+        font-size: 20px;
+        color: White;
+        border-radius: 5px;
+        box-shadow: 3px 3px 3px black;
+        font-weight: bolder;
+        letter-spacing: 1px;
+    }

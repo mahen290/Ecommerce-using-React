@@ -1,0 +1,46 @@
+.admin-wrapper
+    {
+        width: 560px;
+        height: 80px;
+        position: absolute;
+        top: 18%;
+        right: 0%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+.sign-in
+    {
+        width: 150px;
+        height: 50px;
+        background: linear-gradient(orange, rgb(72, 69, 69));
+        font-size: 25px;
+        font-weight: bolder;
+        text-shadow: 1px 1px 1px white;
+        border: none;
+        border-radius: 11px;
+        cursor: pointer;
+    }
+    .sign-in:hover
+        {
+            color: white;
+            text-shadow: 1px 1px 1px black;
+        }
+.sign-up
+    {
+        width: 290px;
+        height: 50px;
+        background: linear-gradient(orange, rgb(72, 69, 69));
+        font-size: 25px;
+        font-weight: bolder;
+        text-shadow: 1px 1px 1px white;
+        border: none;
+        border-radius: 11px;
+        cursor: pointer;
+    }
+    .sign-up:hover
+        {
+            color: white;
+            text-shadow: 1px 1px 1px black;
+        }

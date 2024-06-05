@@ -1,0 +1,15 @@
+*
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    } 
+body
+    {
+        background: linear-gradient(rgb(188, 148, 148),rgb(104, 148, 181),rgb(194, 102, 102));
+        height: auto;
+    } 
+::selection
+    {
+        color: rgb(221, 154, 30);
+    }
