@@ -36,7 +36,7 @@ function App()
     };
 
   const filteredData = data.filter( ( data ) => 
-    data.title.toLowerCase().includes(searchQuery.toLowerCase() )
+    data.title.includes( searchQuery )
   );
 
   return (
@@ -47,6 +47,7 @@ function App()
         <h1> Most Welcome In Moogle.Com </h1>
         <h3> India'S top leading E-commerce Portal </h3> 
         <Admin />
+        <Navbar />
       </div>
       
       <div className ="count_wrapper">
@@ -54,16 +55,18 @@ function App()
         <button className = "btn" onClick = { () => setCount ( count + 1 ) }> Increment </button>
         <button className = "btn" onClick = { () => setCount ( count - 1 ) }> Decrement </button>
       </div>
+
       <Search onSearch = { handleSearch } />
+
       <div className = "api-data-container">
           { 
             filteredData.map( ( item ) => 
             <Card key = { item.id } source = { item.image } name = { item.title } cost = { item.price }/> )
           }
-          <Navbar />
       </div>
 
     </div>
   );
 }
+
 export default App;
