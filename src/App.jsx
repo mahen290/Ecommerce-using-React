@@ -8,9 +8,9 @@ import Admin from './components/Admin';
 import Search from './components/Search';
 
 function App() {
-  const [ count, setCount ] = useState ( 0 );
-  const [ data, setData ] = useState ( [] );
-  const [ searchQuery, setSearchQuery ] = useState ('');
+  const [ count, setCount ] = useState( 0 );
+  const [ data, setData ] = useState( [] );
+  const [ searchQuery, setSearchQuery ] = useState('');
 
 function fetchData()
   {
