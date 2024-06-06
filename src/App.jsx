@@ -13,23 +13,23 @@ function App()
   const [ data, setData ] = useState ( [] );
   const [ searchQuery, setSearchQuery ] = useState ('');
   
-  useEffect( () => {
-    async function fetchData()
+  async function fetchData()
+  {
+    let response = await axios.get("https://fakestoreapi.com/products")
+    .then( (res) => 
     {
-      let response = await axios.get("https://fakestoreapi.com/products")
-      .then( (res) => 
-      {
-        setData(res.data);
-      })
-      .catch( (err) => 
-      {
-        console.error('something went wrong', err);
-      })
-    }
+      setData(res.data);
+    })
+    .catch( (err) => 
+    {
+      console.error('something went wrong', err);
+    })
+  }
+
+  useEffect( () => {
     fetchData();
   },[])
 
-  // this function is used for handling search input.
   const handleSearch = (query) =>
     {
       setSearchQuery(query);
@@ -66,5 +66,4 @@ function App()
     </div>
   );
 }
-
 export default App;

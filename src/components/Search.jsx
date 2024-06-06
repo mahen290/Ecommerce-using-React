@@ -1,7 +1,7 @@
 import React from 'react';
 import './Search.css';
 
-function Search({onSearch}) {
+function Search( { onSearch } ) {
 
   const handleSearch = (event) => {
     onSearch(event.target.value);
