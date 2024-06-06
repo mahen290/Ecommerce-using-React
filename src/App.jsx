@@ -49,7 +49,6 @@ function fetchData()
 
   return (
     <div>
-
       <div className = "main-header">
         <img src = { Logo } alt = "Indian_Flag" className = "ind_flag" />
         <h1> Most Welcome In Moogle.Com </h1>
@@ -72,7 +71,6 @@ function fetchData()
           <Card key = { item.id } source = { item.image } name = { item.title } cost =  { item.price } />)
         }
       </div>
-
     </div>
   );
 }
