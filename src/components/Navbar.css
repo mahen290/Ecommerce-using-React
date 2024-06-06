@@ -20,7 +20,7 @@
     }
 .li:hover
     {
-        color: purple;
+        color: rgb(37, 217, 37);
         text-shadow: 1px 1px 1px black;
     }
 .li:link
@@ -35,6 +35,6 @@
     }
 .li:active
     {
-        color: green;
+        color: rgb(174, 4, 174);
         text-shadow: 1px 1px 1px black;
     }
