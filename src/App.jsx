@@ -15,11 +15,11 @@ function App() {
 function fetchData()
   {
     let response = axios.get("https://fakestoreapi.com/products")
-    .then( (res) => 
+    .then((res) => 
     {
       setData(res.data);
     })
-    .catch( (err) => 
+    .catch((err) => 
     {
       console.error("something went wrong", err);
     })
