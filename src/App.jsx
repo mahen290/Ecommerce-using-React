@@ -25,15 +25,15 @@ function fetchData()
     })
   }
 
-// async function fetchData() {
-//   try {
-//     let response = await axios.get("https://fakestoreapi.com/products")
-//     setData(response.data);
-//   }
-//   catch (error) {
-//     console.error("something wrong", error)
-//   }
-// }
+    // async function fetchData() {
+    //   try {
+    //     let response = await axios.get("https://fakestoreapi.com/products")
+    //     setData(response.data);
+    //   }
+    //   catch (error) {
+    //     console.error("something wrong", error)
+    //   }
+    // }
 
   useEffect(() => {
     fetchData();
