@@ -12,9 +12,9 @@ function App() {
   const [ data, setData ] = useState( [] );
   const [ searchQuery, setSearchQuery ] = useState('');
 
-function fetchData()
+  async function fetchData()
   {
-    let response = axios.get("https://fakestoreapi.com/products")
+    let response = await axios.get("https://fakestoreapi.com/products")
     .then((res) => 
     {
       setData(res.data);
@@ -25,15 +25,15 @@ function fetchData()
     })
   }
 
-    // async function fetchData() {
-    //   try {
-    //     let response = await axios.get("https://fakestoreapi.com/products")
-    //     setData(response.data);
-    //   }
-    //   catch (error) {
-    //     console.error("something wrong", error)
-    //   }
-    // }
+          // async function fetchData() {
+          //   try {
+          //     let response = await axios.get("https://fakestoreapi.com/products")
+          //     setData(response.data);
+          //   }
+          //   catch (error) {
+          //     console.error("something wrong", error)
+          //   }
+          // }
 
   useEffect(() => {
     fetchData();
@@ -44,13 +44,13 @@ function fetchData()
   };
 
   const filteredData = data.filter((data) =>
-    data.title.includes(searchQuery)
+    data.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   return (
     <div>
       <div className = "main-header">
-        <img src = { Logo } alt = "Indian_Flag" className = "ind_flag" />
+        <img className = "ind_flag" src = { Logo } />
         <h1> Most Welcome In Moogle.Com </h1>
         <h3> India'S top leading E-commerce Portal </h3>
         <Admin />

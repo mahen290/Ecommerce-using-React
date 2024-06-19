@@ -10,8 +10,8 @@ function Search( { onSearch } ) {
     <div>
       <h2> Search Items From Here </h2>
       <form className = "form-wrapper">
-        <input type = "search" name = "search-box" placeholder = "Search Your Favorite Items From Here"  />
-        <input className = "submit-btn" type = "submit" value = "Submit" onSubmit = { handleInput }/>
+        <input type = "search" name = "search-box" placeholder = "Search Your Favorite Items Here" onChange = { handleInput } />
+        <input className = "submit-btn" type = "submit" value = "Submit" />
       </form>
     </div>
   );

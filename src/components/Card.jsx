@@ -6,7 +6,7 @@ function Card( { source, name, cost } )
   return (
     <div>
       <div className = "card">
-        <img className = "image-style" src = { source } alt = "product-image" />
+        <img className = "image-style" src = { source } />
         <p className = "title"> { name } </p>
         <p className = "price"> Price : $ { cost } </p>
       </div>
